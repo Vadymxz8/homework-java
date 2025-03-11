@@ -20,6 +20,19 @@ public class Dragon {
         this.color = color;
     }
 
+    public void doVoice(){
+        System.out.println("RRRAAAAARRRRRR!");
+    }
+
+    public void doVoice(String text){
+        System.out.println(text + "RRRAAAAARRRRRR!");
+    }
+
+    public void doFire(){
+        System.out.println("\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25");
+    }
+
+
     public void setName(String name) {
         this.name = name;
     }
@@ -49,5 +62,15 @@ public class Dragon {
 
     public String getColor() {
         return this.color;
+    }
+
+    @Override
+    public String toString() {
+        return "Dragon{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
