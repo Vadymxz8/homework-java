@@ -1,23 +1,27 @@
 package com.vadim.tkach.Reptiles;
 
+import com.vadim.tkach.lesson13.Reptiles.Type;
+
 public class Dragon {
 
     private String name;
     private int age;
     private double weight;
     private String color;
+    private Type type;
 
     public Dragon(){
         System.out.println("Dragon Constructor called");
     }
 
 
-    public Dragon(String name, int age, double weight, String color){
+    public Dragon(String name, int age, double weight, String color, Type type){
         System.out.println("Dragon Constructor WITH PARAMETERS called");
         this.name = name;
         this.age = age;
         this.weight = weight;
         this.color = color;
+        this.type = type;
     }
 
     public void doVoice(){
@@ -63,6 +67,10 @@ public class Dragon {
     public String getColor() {
         return this.color;
     }
+    public Type getType(){return type; }
+
+    public void setType(Type type){ this.type = type;}
+
 
     @Override
     public String toString() {
@@ -71,6 +79,7 @@ public class Dragon {
                 ", age=" + age +
                 ", weight=" + weight +
                 ", color='" + color + '\'' +
+               ", type=" + type +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 package com.vadim.tkach.lesson13;
 
 import com.vadim.tkach.Reptiles.Dragon;
+import com.vadim.tkach.lesson13.Reptiles.Type;
 
 
 import java.util.Scanner;
@@ -31,7 +32,7 @@ public class Main {
         System.out.println("-----------");
 
         // Створення об'єкта з параметрами (правильний синтаксис)
-        Dragon dragon2 = new Dragon("Balerion", 347, 1535.5, "Black");
+        Dragon dragon2 = new Dragon("Balerion", 347, 1535.5, "Black",Type.Dragon);
 
         System.out.println(dragon2.getName());
         System.out.println(dragon2.getAge());
@@ -58,10 +59,15 @@ public class Main {
         System.out.print("Enter dragon color: ");
         String color = scanner.nextLine();
 
-        Dragon userDragon = new Dragon(name, age, weight, color);
+        System.out.println("Enter the type of dragon");
+        String typeString = scanner.next();
+        Type type = Type.valueOf(typeString);
+
+        Dragon userDragon = new Dragon(name, age, weight, color, type);
 
         System.out.println("You build new dragon:");
         System.out.println(userDragon);
+
 
         scanner.close();
     }
