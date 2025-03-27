@@ -2,6 +2,8 @@ package com.vadim.tkach.Reptiles;
 
 import com.vadim.tkach.lesson13.Reptiles.Type;
 
+import java.util.Objects;
+
 public class Dragon {
 
     private String name;
@@ -11,31 +13,17 @@ public class Dragon {
     private Type type;
 
     public Dragon(){
-        System.out.println("Dragon Constructor called");
+
     }
 
-
     public Dragon(String name, int age, double weight, String color, Type type){
-        System.out.println("Dragon Constructor WITH PARAMETERS called");
+
         this.name = name;
         this.age = age;
         this.weight = weight;
         this.color = color;
         this.type = type;
     }
-
-    public void doVoice(){
-        System.out.println("RRRAAAAARRRRRR!");
-    }
-
-    public void doVoice(String text){
-        System.out.println(text + "RRRAAAAARRRRRR!");
-    }
-
-    public void doFire(){
-        System.out.println("\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25");
-    }
-
 
     public void setName(String name) {
         this.name = name;
@@ -82,4 +70,16 @@ public class Dragon {
                ", type=" + type +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Dragon dragon)) return false;
+        return age == dragon.age && Double.compare(weight, dragon.weight) == 0 && Objects.equals(color, dragon.color) && type == dragon.type;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, weight, color, type);
+    }
+
 }
