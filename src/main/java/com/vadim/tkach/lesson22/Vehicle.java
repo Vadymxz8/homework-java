@@ -1,4 +1,4 @@
-package com.vadim.tkach.lesson18;
+package com.vadim.tkach.lesson22;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -19,7 +19,13 @@ public  Vehicle (double fuelLevel, double consumPer100km, LocalDate nextInspecti
     this.nextInspection = nextInspection;
 }
 
-public boolean canDrive(){
+    public Vehicle() {
+        this.fuelLevel = 10;
+        this.consumPer100km = 10;
+        this.nextInspection = LocalDate.now();
+    }
+
+    public boolean canDrive(){
 
     return fuelLevel > 0;
 }

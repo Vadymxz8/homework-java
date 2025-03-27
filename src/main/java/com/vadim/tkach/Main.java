@@ -1,5 +1,5 @@
 package com.vadim.tkach;
-import com.vadim.tkach.lesson18.Vehicle;
+import com.vadim.tkach.lesson22.Vehicle;
 import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
