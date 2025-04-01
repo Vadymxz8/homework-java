@@ -1,7 +1,7 @@
 package com.vadim.tkach.lesson27;
 
 import com.vadim.tkach.Reptiles.Dragon;
-import com.vadim.tkach.lesson13.Reptiles.Type;
+import com.vadim.tkach.lesson27.Reptiles.Type;
 
 
 import java.util.Scanner;

@@ -1,6 +1,6 @@
-package com.vadim.tkach.Reptiles;
+package com.vadim.tkach.lesson27.Reptiles;
 
-import com.vadim.tkach.lesson13.Reptiles.Type;
+import com.vadim.tkach.lesson27.Reptiles.Type;
 
 import java.util.Objects;
 
