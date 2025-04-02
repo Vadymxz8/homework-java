@@ -1,12 +1,9 @@
 package com.vadim.tkach.lesson27;
 
-import com.vadim.tkach.Reptiles.Dragon;
-import com.vadim.tkach.lesson13.Reptiles.Type;
+import com.vadim.tkach.lesson27.Reptiles.Dragon;
+import com.vadim.tkach.lesson27.Reptiles.Type;
 
-
-import java.util.Scanner;
-
-public class ffMain {
+public class Main {
     public static void main(String[] args) {
 
         Dragon dragon1 = new Dragon();

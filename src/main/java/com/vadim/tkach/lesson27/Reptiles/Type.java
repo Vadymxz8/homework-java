@@ -1,4 +1,4 @@
-package com.vadim.tkach.lesson13.Reptiles;
+package com.vadim.tkach.lesson27.Reptiles;
 
 public enum Type {
     Dragon,

@@ -1,6 +1,6 @@
-package com.vadim.tkach.Reptiles;
+package com.vadim.tkach.lesson27.Reptiles;
 
-import com.vadim.tkach.lesson13.Reptiles.Type;
+import com.vadim.tkach.lesson27.Reptiles.Type;
 
 import java.util.Objects;
 
@@ -67,7 +67,7 @@ public class Dragon {
                 ", age=" + age +
                 ", weight=" + weight +
                 ", color='" + color + '\'' +
-               ", type=" + type +
+                ", type=" + type +
                 '}';
     }
 
@@ -83,3 +83,4 @@ public class Dragon {
     }
 
 }
+
