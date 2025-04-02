@@ -19,13 +19,7 @@ public  Vehicle (double fuelLevel, double consumPer100km, LocalDate nextInspecti
     this.nextInspection = nextInspection;
 }
 
-    public Vehicle() {
-        this.fuelLevel = 10;
-        this.consumPer100km = 10;
-        this.nextInspection = LocalDate.now();
-    }
-
-    public boolean canDrive(){
+public boolean canDrive(){
 
     return fuelLevel > 0;
 }
