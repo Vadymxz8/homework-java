@@ -17,10 +17,10 @@ public class Stack implements Stackable {
     public void addElementToStack(int element) throws StackIsFullException {
         if (isFull()) {
             throw new StackIsFullException();
-        } else {
-            stackArray[++top] = element;
-            System.out.println("Element " + element + " be addet to stack");
         }
+        
+        stackArray[++top] = element;
+        System.out.println("Element " + element + " be addet to stack");
     }
 
     @Override
