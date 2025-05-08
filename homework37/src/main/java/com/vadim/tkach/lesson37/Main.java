@@ -10,11 +10,11 @@ public class Main {
         numbers.add(2);
         numbers.add(3);
         numbers.add(4);
-        int sum = NumberUtils.getsum(numbers);
+        double sum = NumberUtils.getsum(numbers);
         System.out.println(numbers);
         System.out.println("sum of numbers: " + sum);
 
-        List<Integer> multipliedresult = NumberUtils.sumOddNumbers(numbers);
+        List<Long> multipliedresult = NumberUtils.sumOddNumbers(numbers);
         System.out.println("Multiplied odd numbers: " + multipliedresult);
 
 

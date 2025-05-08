@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NumberUtils {
-    public static int getsum(List<Number> numbers) {
+    public static double getsum(List<Number> numbers) {
         int sum = 0;
         for (Number number : numbers) {
-                sum += number.intValue();
+                sum += number.doubleValue();
         }
         return sum;
     }
-    public static List<Integer> sumOddNumbers(List<Number> numbers) {
-        List<Integer> result = new ArrayList<>();
+    public static List<Long> sumOddNumbers(List<Number> numbers) {
+        List<Long> result = new ArrayList<>();
         for (Number number : numbers) {
-            int value = number.intValue();
+            long value = number.longValue();
             if (value % 2 != 0) {
               result.add(value * 2);
             }
