@@ -1,9 +1,6 @@
 package com.vadim.tkach.lesson41;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +19,14 @@ public class Main {
         System.out.println("Before :" + carFactory);
         Collections.sort(carFactory);
         System.out.println("After ;" + carFactory);
+        Set<Car> sortedByEngine = new TreeSet<>(Car.ENGINE_CAPACITY_COMPARATOR);
+
+        sortedByEngine.add(car1);
+        sortedByEngine.add(car2);
+        sortedByEngine.add(car3);
+        sortedByEngine.add(car4);
+        sortedByEngine.add(car5);
+
+        System.out.println("Sorted by engine capacity: " + sortedByEngine);
     }
 }

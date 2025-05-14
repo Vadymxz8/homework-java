@@ -1,8 +1,14 @@
 package com.vadim.tkach.lesson41;
 
+import java.util.Comparator;
+
 public class Car implements Comparable<Car> {
-    int yearOfManufacture;
-    double engineCapacity;
+
+    public static final Comparator<Car> ENGINE_CAPACITY_COMPARATOR =
+            Comparator.comparingDouble(Car::getEngineCapacity);
+
+    private final int yearOfManufacture;
+    private final double engineCapacity;
 
     public Car(int yearOfManufacture, double engineCapacity) {
         this.yearOfManufacture = yearOfManufacture;
@@ -13,16 +19,8 @@ public class Car implements Comparable<Car> {
         return yearOfManufacture;
     }
 
-    public void setYearOfManufacture(int yearOfManufacture) {
-        this.yearOfManufacture = yearOfManufacture;
-    }
-
     public double getEngineCapacity() {
         return engineCapacity;
-    }
-
-    public void setEngineCapacity(double engineCapacity) {
-        this.engineCapacity = engineCapacity;
     }
 
     @Override
